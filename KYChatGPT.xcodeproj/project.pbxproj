@@ -1,0 +1,434 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D2A52BA299CAF5E00F91C62 /* KYChatGPTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2A52B9299CAF5E00F91C62 /* KYChatGPTApp.swift */; };
+		3D2A52BC299CAF5E00F91C62 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2A52BB299CAF5E00F91C62 /* ContentView.swift */; };
+		3D2A52BE299CAF5E00F91C62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D2A52BD299CAF5E00F91C62 /* Assets.xcassets */; };
+		3D2A52C1299CAF5E00F91C62 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D2A52C0299CAF5E00F91C62 /* Preview Assets.xcassets */; };
+		3D2A52CA299CB01B00F91C62 /* KYEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2A52C9299CB01B00F91C62 /* KYEngine.swift */; };
+		3D2A52CC299CB07E00F91C62 /* KYOpenAIModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2A52CB299CB07E00F91C62 /* KYOpenAIModelType.swift */; };
+		3D2A52CE299CB0F900F91C62 /* KYEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2A52CD299CB0F900F91C62 /* KYEndpoint.swift */; };
+		3D2A52D0299CB16700F91C62 /* KYOpenAISwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2A52CF299CB16700F91C62 /* KYOpenAISwift.swift */; };
+		3D2A52D2299CB20A00F91C62 /* KYOpenAIChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2A52D1299CB20A00F91C62 /* KYOpenAIChatModel.swift */; };
+		3D2A52D4299CB25700F91C62 /* KYInstruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2A52D3299CB25700F91C62 /* KYInstruction.swift */; };
+		3D2A52D6299CB2DB00F91C62 /* KYCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2A52D5299CB2DB00F91C62 /* KYCommand.swift */; };
+		3D2A52D8299CB3B300F91C62 /* KYOpenAIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2A52D7299CB3B300F91C62 /* KYOpenAIViewModel.swift */; };
+		3D2A52DC299CB4B200F91C62 /* KYMessageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2A52DB299CB4B200F91C62 /* KYMessageRow.swift */; };
+		3D2A52DF299CB68300F91C62 /* KYMessageRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2A52DE299CB68300F91C62 /* KYMessageRowView.swift */; };
+		3D2A52E1299CB81200F91C62 /* KYDotLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2A52E0299CB81200F91C62 /* KYDotLoadingView.swift */; };
+		3D2A52E3299CB9C500F91C62 /* KYChatContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2A52E2299CB9C500F91C62 /* KYChatContentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3D2A52B6299CAF5E00F91C62 /* KYChatGPT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KYChatGPT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D2A52B9299CAF5E00F91C62 /* KYChatGPTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYChatGPTApp.swift; sourceTree = "<group>"; };
+		3D2A52BB299CAF5E00F91C62 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3D2A52BD299CAF5E00F91C62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D2A52C0299CAF5E00F91C62 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3D2A52C9299CB01B00F91C62 /* KYEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYEngine.swift; sourceTree = "<group>"; };
+		3D2A52CB299CB07E00F91C62 /* KYOpenAIModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYOpenAIModelType.swift; sourceTree = "<group>"; };
+		3D2A52CD299CB0F900F91C62 /* KYEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYEndpoint.swift; sourceTree = "<group>"; };
+		3D2A52CF299CB16700F91C62 /* KYOpenAISwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYOpenAISwift.swift; sourceTree = "<group>"; };
+		3D2A52D1299CB20A00F91C62 /* KYOpenAIChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYOpenAIChatModel.swift; sourceTree = "<group>"; };
+		3D2A52D3299CB25700F91C62 /* KYInstruction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYInstruction.swift; sourceTree = "<group>"; };
+		3D2A52D5299CB2DB00F91C62 /* KYCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYCommand.swift; sourceTree = "<group>"; };
+		3D2A52D7299CB3B300F91C62 /* KYOpenAIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYOpenAIViewModel.swift; sourceTree = "<group>"; };
+		3D2A52DB299CB4B200F91C62 /* KYMessageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYMessageRow.swift; sourceTree = "<group>"; };
+		3D2A52DE299CB68300F91C62 /* KYMessageRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYMessageRowView.swift; sourceTree = "<group>"; };
+		3D2A52E0299CB81200F91C62 /* KYDotLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYDotLoadingView.swift; sourceTree = "<group>"; };
+		3D2A52E2299CB9C500F91C62 /* KYChatContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYChatContentView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D2A52B3299CAF5E00F91C62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D2A52AD299CAF5E00F91C62 = {
+			isa = PBXGroup;
+			children = (
+				3D2A52B8299CAF5E00F91C62 /* KYChatGPT */,
+				3D2A52B7299CAF5E00F91C62 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D2A52B7299CAF5E00F91C62 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D2A52B6299CAF5E00F91C62 /* KYChatGPT.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D2A52B8299CAF5E00F91C62 /* KYChatGPT */ = {
+			isa = PBXGroup;
+			children = (
+				3D2A52B9299CAF5E00F91C62 /* KYChatGPTApp.swift */,
+				3D2A52D9299CB49800F91C62 /* Message */,
+				3D2A52C8299CB00F00F91C62 /* OpenAI */,
+				3D2A52C7299CB00100F91C62 /* ViewModels */,
+				3D2A52BB299CAF5E00F91C62 /* ContentView.swift */,
+				3D2A52BD299CAF5E00F91C62 /* Assets.xcassets */,
+				3D2A52BF299CAF5E00F91C62 /* Preview Content */,
+			);
+			path = KYChatGPT;
+			sourceTree = "<group>";
+		};
+		3D2A52BF299CAF5E00F91C62 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3D2A52C0299CAF5E00F91C62 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3D2A52C7299CB00100F91C62 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3D2A52D7299CB3B300F91C62 /* KYOpenAIViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3D2A52C8299CB00F00F91C62 /* OpenAI */ = {
+			isa = PBXGroup;
+			children = (
+				3D2A52C9299CB01B00F91C62 /* KYEngine.swift */,
+				3D2A52CB299CB07E00F91C62 /* KYOpenAIModelType.swift */,
+				3D2A52CD299CB0F900F91C62 /* KYEndpoint.swift */,
+				3D2A52D3299CB25700F91C62 /* KYInstruction.swift */,
+				3D2A52D5299CB2DB00F91C62 /* KYCommand.swift */,
+				3D2A52CF299CB16700F91C62 /* KYOpenAISwift.swift */,
+				3D2A52D1299CB20A00F91C62 /* KYOpenAIChatModel.swift */,
+			);
+			path = OpenAI;
+			sourceTree = "<group>";
+		};
+		3D2A52D9299CB49800F91C62 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				3D2A52DD299CB63500F91C62 /* View */,
+				3D2A52DA299CB4A700F91C62 /* Model */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		3D2A52DA299CB4A700F91C62 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D2A52DB299CB4B200F91C62 /* KYMessageRow.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3D2A52DD299CB63500F91C62 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3D2A52DE299CB68300F91C62 /* KYMessageRowView.swift */,
+				3D2A52E0299CB81200F91C62 /* KYDotLoadingView.swift */,
+				3D2A52E2299CB9C500F91C62 /* KYChatContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D2A52B5299CAF5E00F91C62 /* KYChatGPT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D2A52C4299CAF5E00F91C62 /* Build configuration list for PBXNativeTarget "KYChatGPT" */;
+			buildPhases = (
+				3D2A52B2299CAF5E00F91C62 /* Sources */,
+				3D2A52B3299CAF5E00F91C62 /* Frameworks */,
+				3D2A52B4299CAF5E00F91C62 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KYChatGPT;
+			productName = KYChatGPT;
+			productReference = 3D2A52B6299CAF5E00F91C62 /* KYChatGPT.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D2A52AE299CAF5E00F91C62 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					3D2A52B5299CAF5E00F91C62 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 3D2A52B1299CAF5E00F91C62 /* Build configuration list for PBXProject "KYChatGPT" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D2A52AD299CAF5E00F91C62;
+			productRefGroup = 3D2A52B7299CAF5E00F91C62 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D2A52B5299CAF5E00F91C62 /* KYChatGPT */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D2A52B4299CAF5E00F91C62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D2A52C1299CAF5E00F91C62 /* Preview Assets.xcassets in Resources */,
+				3D2A52BE299CAF5E00F91C62 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D2A52B2299CAF5E00F91C62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D2A52CE299CB0F900F91C62 /* KYEndpoint.swift in Sources */,
+				3D2A52DF299CB68300F91C62 /* KYMessageRowView.swift in Sources */,
+				3D2A52E1299CB81200F91C62 /* KYDotLoadingView.swift in Sources */,
+				3D2A52D2299CB20A00F91C62 /* KYOpenAIChatModel.swift in Sources */,
+				3D2A52CA299CB01B00F91C62 /* KYEngine.swift in Sources */,
+				3D2A52D6299CB2DB00F91C62 /* KYCommand.swift in Sources */,
+				3D2A52CC299CB07E00F91C62 /* KYOpenAIModelType.swift in Sources */,
+				3D2A52D4299CB25700F91C62 /* KYInstruction.swift in Sources */,
+				3D2A52E3299CB9C500F91C62 /* KYChatContentView.swift in Sources */,
+				3D2A52BC299CAF5E00F91C62 /* ContentView.swift in Sources */,
+				3D2A52BA299CAF5E00F91C62 /* KYChatGPTApp.swift in Sources */,
+				3D2A52DC299CB4B200F91C62 /* KYMessageRow.swift in Sources */,
+				3D2A52D8299CB3B300F91C62 /* KYOpenAIViewModel.swift in Sources */,
+				3D2A52D0299CB16700F91C62 /* KYOpenAISwift.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3D2A52C2299CAF5E00F91C62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3D2A52C3299CAF5E00F91C62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D2A52C5299CAF5E00F91C62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KYChatGPT/Preview Content\"";
+				DEVELOPMENT_TEAM = 4RY4QRMJ4Y;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.keyon.test.KYChatGPT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3D2A52C6299CAF5E00F91C62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KYChatGPT/Preview Content\"";
+				DEVELOPMENT_TEAM = 4RY4QRMJ4Y;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.keyon.test.KYChatGPT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D2A52B1299CAF5E00F91C62 /* Build configuration list for PBXProject "KYChatGPT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D2A52C2299CAF5E00F91C62 /* Debug */,
+				3D2A52C3299CAF5E00F91C62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D2A52C4299CAF5E00F91C62 /* Build configuration list for PBXNativeTarget "KYChatGPT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D2A52C5299CAF5E00F91C62 /* Debug */,
+				3D2A52C6299CAF5E00F91C62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D2A52AE299CAF5E00F91C62 /* Project object */;
+}
